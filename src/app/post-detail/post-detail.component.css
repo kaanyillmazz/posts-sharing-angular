@@ -2,20 +2,17 @@
   font-size: x-large;
   text-align: center;
   color: firebrick;
-
 }
 .post-title{
   font-size: medium;
-
 }
-
 
 .commentsMain{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
 }
+
 .goBack {
   width: 20vw;
   align-self: center;
@@ -26,9 +23,9 @@
 }
 
 .post-details{
-  align-self: flex-start;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 .comment-details{
@@ -41,8 +38,6 @@
 .comments {
   font-size: xx-large;
   margin-top: 7vh;
-
-
 }
 
 .comment-individual{
@@ -64,6 +59,4 @@
   font-size: medium;
   text-align: left;
   margin-bottom: 1vh;
-
-
 }
