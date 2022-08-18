@@ -1,0 +1,10 @@
+<div *ngIf="post">
+  <h2 class="post-title">{{post.title | uppercase}}</h2>
+  <label class="post-body">{{post.body}}</label>
+  <ul>
+    <li *ngFor="let comment of comments">
+      <span>{{comment.name}}</span>
+      <span>{{comment.body}}</span>
+    </li>
+  </ul>
+</div>
