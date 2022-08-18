@@ -1,11 +1,22 @@
-<div *ngIf="post">
-  <h2 class="post-title">{{post.title | uppercase}}</h2>
-  <label class="post-body">{{post.body}}</label>
-  <ul>
-    <li *ngFor="let comment of comments">
-      <span>{{comment.name}}</span>
-      <span>{{comment.body}}</span>
-    </li>
-  </ul>
-  <button (click)="goBack()">Return</button>
+<div class="commentsMain" *ngIf="post">
+  <div class="post-details">
+    <h2 class="post-title">{{post.title | uppercase}}</h2>
+    <label class="post-body">{{post.body}}</label>
+  </div>
+  <div class="comment-details">
+    <label class="comments">Comments</label>
+    <ul>
+      <li *ngFor="let comment of comments">
+        <div class="comment-individual">
+          <label class="comment-name">{{comment.name}}</label>
+          <label class="comment-body">{{comment.body}}</label>
+        </div>
+
+      </li>
+    </ul>
+
+  </div>
+
+  <button class="goBack" (click)="goBack()">Return</button>
 </div>
+

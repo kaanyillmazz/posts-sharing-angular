@@ -1,1 +1,18 @@
+.post-name{
+  text-decoration: none;
+  font-size: large;
+  color: firebrick;
+  padding-top: 100px;
+}
 
+li{
+  margin: 7px;
+}
+
+li::marker{
+  color: #125699;
+}
+.posts{
+  font-size: xx-large;
+  margin-left: 2vw;
+}
