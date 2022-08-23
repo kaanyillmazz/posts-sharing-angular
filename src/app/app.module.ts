@@ -11,13 +11,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { ProductListComponent } from './product-list/product-list.component';
 import { PerProductComponent } from './per-product/per-product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     PerProductComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatGridListModule
+    MatGridListModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

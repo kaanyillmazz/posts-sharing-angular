@@ -1,4 +1,7 @@
 <label class="products-list">Products</label>
+<div *ngIf="loading">
+  <mat-spinner></mat-spinner>
+</div>
 <div *ngIf="products">
   <ul class="postsList">
     <li *ngFor="let product of products">
