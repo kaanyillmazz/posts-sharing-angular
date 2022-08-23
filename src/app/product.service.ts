@@ -13,14 +13,16 @@ export class ProductService {
   private baseURL: string = "https://fakestoreapi.com/products";
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseURL).pipe(
-      catchError(this.handleError<Product[]>('getProducts', []))
+      catchError(this.handleError<Product[]>('getProducts', [])),
+      tap(product => {for (let i = 0; i<product.length; i++) {if(!product[i].count){product[i].count = 0;}}})
     );
   }
 
   getProduct(id: number): Observable<Product> {
     const url = `${this.baseURL}/${id}`;
     return this.http.get<Product>(url).pipe(
-      catchError(this.handleError<Product>(`getProduct id=${id}`))
+      catchError(this.handleError<Product>(`getProduct id=${id}`)),
+      tap(product => {if(!product.count){product.count = 0;}})
     );
   }
 
