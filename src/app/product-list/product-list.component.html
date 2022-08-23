@@ -11,3 +11,12 @@
     </li>
   </ul>
 </div>
+<div *ngIf="items.length > 0">
+  <label>Items in Cart:</label>
+  <ul class="cartList">
+    <li *ngFor="let item of items">
+      <span>{{item.id}}</span> {{item.title}}
+    </li>
+  </ul>
+</div>
+

@@ -25,4 +25,7 @@ export class Cart {
   emptyCart() {
     this.items = [];
   }
+  getItems() {
+    return this.items;
+  }
 }
