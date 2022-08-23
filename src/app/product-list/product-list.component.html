@@ -1,0 +1,10 @@
+<label class="products-list">Products</label>
+<div *ngIf="products">
+  <ul class="postsList">
+    <li *ngFor="let product of products">
+      <a class="post-name" routerLink="/product/{{product.id}}">
+        <span>{{product.id}}</span> {{product.title}}
+      </a>
+    </li>
+  </ul>
+</div>

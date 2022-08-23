@@ -4,6 +4,10 @@
   color: firebrick;
 }
 
+.tile{
+  height: 10px;
+}
+
 li{
   margin: 7px;
 }
