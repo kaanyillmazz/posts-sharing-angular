@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { PostsListComponent } from './posts-list/posts-list.component';
+
 import { HttpClientModule } from '@angular/common/http';
-import { PostDetailComponent } from './post-detail/post-detail.component';
+
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
@@ -15,8 +15,6 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 @NgModule({
   declarations: [
     AppComponent,
-    PostsListComponent,
-    PostDetailComponent,
     ProductListComponent,
     PerProductComponent,
     ProductDetailComponent
