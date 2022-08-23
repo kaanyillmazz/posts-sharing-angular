@@ -20,6 +20,11 @@ export class ProductListComponent implements OnInit {
   this.items = this.cart.getItems();
   }
 
+  emptyCart() {
+    this.cart.emptyCart();
+    this.ngOnInit();
+  }
+
   getPosts(): void {
     this.productService.getProducts().subscribe(
       (response) => {

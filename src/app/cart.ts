@@ -20,6 +20,8 @@ export class Cart {
   addToCart(product: Product) {
     if(this.findInCart(product) == -1) {
       this.items.push(product);
+      let index = this.findInCart(product);
+      this.items[index].count = this.items[index].count+1;
     } else {
       let index = this.findInCart(product);
       this.items[index].count = this.items[index].count+1;

@@ -15,8 +15,9 @@
   <label>Items in Cart:</label>
   <ul class="cartList">
     <li *ngFor="let item of items">
-      <span>{{item.id}}</span> {{item.title}}
+      <span>{{item.id}}</span> {{item.title}} <span>{{item.count}}</span>
     </li>
   </ul>
+  <button (click)="emptyCart()">Empty Cart</button>
 </div>
 
