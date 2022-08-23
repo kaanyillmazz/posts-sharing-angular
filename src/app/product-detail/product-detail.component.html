@@ -1,6 +1,8 @@
 <div *ngIf="product">
   <label>{{product.title}}</label>
   <img [src]="product.image" height="400" width="275">
+  <button (click)="addToCart(product)">Add To Cart</button>
 </div>
 <button (click)="goBack()">Back</button>
+
 
